@@ -42,50 +42,52 @@ This video explains the research motivation, the mechanism design of the propose
 </div>
 
 ---
+<!-- <br> <span style="opacity: 0;">v</span> -->
 <!-- distant, tilted object picking 넣기 -->
+
 <div class="columns">
     <!-- Left Column: YouTube 비디오 (Visual Effects) -->
     <div class="column">
+        <h3 class="title">Picking Distant and Tilted Objects</h3>
+        <iframe width="100%" height="315"
+                src="https://www.youtube.com/embed/VlD043Cb_BE?autoplay=1&mute=1&loop=1&playlist=VlD043Cb_BE"
+                frameborder="0" allowfullscreen>
+        </iframe>
+        <p>The proposed gripper has a deployable body, allowing it to pick distant and tilted objects. Additionally, with its pneumatic circuit design, once the suction cup makes contact and seals with the object, it can automatically pick up the object without the need for additional contact sensing. This design enhances picking robustness against vision sensing errors. </p>
+    </div>
+
+    <!-- Right Column: YouTube 비디오 (Matting) -->
+    <div class="column">
         <h3 class="title">Picking Objects of Different Heights</h3>
-        <p>The proposed gripper picks up objects of different heights from the same picking height. The gripper eleiminates the need for depth sensing to pick up different heights of objects.</p>
         <iframe width="100%" height="315"
                 src="https://www.youtube.com/embed/tt_2sZBLOLE?autoplay=1&mute=1&loop=1&playlist=tt_2sZBLOLE"
                 frameborder="0" allowfullscreen>
         </iframe>
+        <p>The proposed gripper picks up objects of different heights from the same picking height. The gripper eleiminates the need for depth sensing to pick up different heights of objects.</p>
     </div>
+</div>
 
-    <!-- Right Column: YouTube 비디오 (Matting) -->
+<br>
+
+<div class="columns">
+    <!-- Left Column: YouTube 비디오 (Visual Effects) -->
     <div class="column">
         <h3 class="title">Bin Picking of Transparent Objects</h3>
-        <p>Perceiving transparent objects is a challenge in vision sensing. The proposed gripper can easily perform bin picking tasks of transparent dishes even in the presence of depth or tilt angle errors.</p>
         <iframe width="100%" height="315"
                 src="https://www.youtube.com/embed/finvctjoIIE?autoplay=1&mute=1&loop=1&playlist=finvctjoIIE"
                 frameborder="0" allowfullscreen>
         </iframe>
+        <p>Perceiving transparent objects is a challenge in vision sensing. The proposed gripper can easily perform bin picking tasks of transparent dishes even in the presence of depth or tilt angle errors.</p>
     </div>
-</div>
 
-<br>
-
-<div class="columns">
-    <!-- Left Column: YouTube 비디오 (Visual Effects) -->
+    <!-- Right Column: YouTube 비디오 (Matting) -->
     <div class="column">
         <h3 class="title">Depalletizing</h3>
-        <p>By arranging multiple grippers in parallel, the grippers can pick up multiple objects at different heights at once. This feature enables depalletizing when the number of grippers and the number of the objects arranged on each layer do not match.</p>
         <iframe width="100%" height="315"
                 src="https://www.youtube.com/embed/R-OGyXUa7Fg?autoplay=1&mute=1&loop=1&playlist=R-OGyXUa7Fg"
                 frameborder="0" allowfullscreen>
         </iframe>
-    </div>
-
-    <!-- Right Column: YouTube 비디오 (Matting) -->
-    <div class="column">
-        <h3 class="title">Warehous Picking</h3>
-        <p>Extending the length of the gripper enables warehous picking in occlude environments. It has 140 mm stroke and can penetrate a narrow, deep space that cannot be reached by a manipulator.</p>
-        <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/UYoG46ldE9o?autoplay=1&mute=1&loop=1&playlist=UYoG46ldE9o"
-                frameborder="0" allowfullscreen>
-        </iframe>
+        <p>By arranging multiple grippers in parallel, the grippers can pick up multiple objects at different heights at once. This feature enables depalletizing when the number of grippers and the number of the objects arranged on each layer do not match.</p>
     </div>
 </div>
 
@@ -94,19 +96,25 @@ This video explains the research motivation, the mechanism design of the propose
 <div class="columns">
     <!-- Left Column: YouTube 비디오 (Visual Effects) -->
     <div class="column">
-        <h3 class="title">Dynamic Picking</h3>
-        <p>The proposed gripper with 79 mm stroke was applied to catch a falling balloon at a speed of 1.02 m/s at a distance of 50.1 mm, demonstrating the possibility of dynamic grasping.</p>
+        <h3 class="title">Warehouse Picking</h3>
         <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/CvUfYvb5tG0?autoplay=1&mute=1&loop=1&playlist=CvUfYvb5tG0"
+                src="https://www.youtube.com/embed/UYoG46ldE9o?autoplay=1&mute=1&loop=1&playlist=UYoG46ldE9o"
                 frameborder="0" allowfullscreen>
         </iframe>
+        <p>Extending the length of the gripper enables warehous picking in occlude environments. It has 140 mm stroke and can penetrate a narrow, deep space that cannot be reached by a manipulator.</p>
     </div>
 
     <!-- Right Column: YouTube 비디오 (Matting) -->
     <div class="column">
-
+        <h3 class="title">Dynamic Picking</h3>
+        <iframe width="100%" height="315"
+                src="https://www.youtube.com/embed/CvUfYvb5tG0?autoplay=1&mute=1&loop=1&playlist=CvUfYvb5tG0"
+                frameborder="0" allowfullscreen>
+        </iframe>
+        <p>The proposed gripper with 79 mm stroke was applied to catch a falling balloon at a speed of 1.02 m/s at a distance of 50.1 mm, demonstrating the possibility of dynamic grasping.</p>
     </div>
 </div>
+
 
 ---
 
