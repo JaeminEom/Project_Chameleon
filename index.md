@@ -9,8 +9,8 @@ authors:
 affiliations:
     <sup>1</sup>Biorobotics Laboratory, Seoul National University
     <br> (* Yuna Yoo and Jaemin Eom contributed equally to this work.)
-paper: https://www.science.org/doi/10.1126/scirobotics.ado3939
-video: https://www.youtube.com/watch?v=qFD562zo4Vk
+paper: https://ieeexplore.ieee.org/document/10024348
+video: https://www.youtube.com/watch?v=5f0qXYcE3nw
 ---
 
 <!-- Using HTML to center the abstract -->
