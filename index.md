@@ -2,14 +2,13 @@
 layout: project_page
 permalink: /
 
-title: "MOGrip: Gripper for Multi-Object Grasping in Pick-and-Place Tasks Using Translational Movements of Fingers"
+title: "Compliant Suction Gripper With Seamless Deployment and Retraction for Robust Picking Against Depth and Tilt Errors"
 authors:
-    Jaemin Eom<sup>1</sup>, Sung Yol Yu<sup>1</sup>, Woongbae Kim<sup>2</sup>, Chunghoon Park<sup>1,3</sup>, Kristine Yoonseo Lee<sup>1</sup>, <br> Kyu-Jin Cho<sup>1</sup>
+    Yuna Yoo<sup>1*</sup>, Jaemin Eom<sup>1*</sup>, MinJo Park<sup>1</sup>, Kyu-Jin Cho<sup>1</sup>
 
 affiliations:
     <sup>1</sup>Biorobotics Laboratory, Seoul National University
-    <sup>2</sup>Korea Institute of Science and Technology
-    <sup>3</sup>Global Technology Research, Samsung Electronics Co. Ltd.
+    <br> (* Yuna Yoo and Jaemin Eom contributed equally to this work.)
 paper: https://www.science.org/doi/10.1126/scirobotics.ado3939
 video: https://www.youtube.com/watch?v=qFD562zo4Vk
 ---
@@ -19,63 +18,48 @@ video: https://www.youtube.com/watch?v=qFD562zo4Vk
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-Humans use their dexterous fingers and adaptable palm in various multi-object 
-grasping strategies to efficiently move multiple objects together in various situations. 
-Advanced manipulation skills, such as finger-to-palm translation and palm-to-finger 
-translation, enhance the dexterity in multiobject grasping. These translational movements 
-allow the fingers to transfer the grasped objects to the palm for storage, enabling the 
-fingers to freely perform various pick-and-place tasks while the palm stores multiple 
-objects. However, conventional grippers, although able to handle multiple objects 
-simultaneously, lack this integrated functionality, which combines the palm’s 
-storage with the fingers’ precise placement. Here, we introduce a gripper for 
-multi-object grasping that applies translational movements of fingertips 
-to leverage the synergistic use of fingers and the palm for enhanced 
-pick-and-place functionality. The proposed gripper consists of four fingers 
-and an adaptive conveyor palm. The fingers sequentially grasp and transfer objects 
-to the palm, where the objects are stored simultaneously, allowing the gripper to move 
-multiple objects at once. Furthermore, by reversing this process, the fingers retrieve 
-the stored objects and place them one by one in the desired position and orientation. 
-A finger design for simple object translating and a palm design for simultaneous object 
-storing were proposed and validated. In addition, the time efficiency and pick-and-place 
-capabilities of the developed gripper were demonstrated. Our work shows the potential of 
-finger translation to enhance functionality and broaden the applicability of multi-object 
-grasping.
+Applying suction grippers in unstructured environments is a challenging task because of depth and tilt errors in vision systems, requiring additional costs in elaborate sensing and control. To reduce additional costs, suction grippers with compliant bodies or mechanisms have been proposed; however, their bulkiness and limited allowable error hinder their use in complex environments with large errors. Here, we propose a compact suction gripper that can pick objects over a wide range of distances and tilt angles without elaborate sensing and control. The spring-inserted gripper body deploys and conforms to distant and tilted objects until the suction cup completely seals with the object and retracts immediately after, while holding the object. This seamless deployment and retraction are enabled by connecting the gripper body and suction cup to the same vacuum source, which couples the vacuum picking and retraction of the gripper body. Experimental results validated that the proposed gripper can pick objects within 79 mm, which is 1.4 times the initial length, and can pick objects with tilt angles up to 60°. The feasibility of the gripper was verified by demonstrations, including picking objects of different heights from the same picking height and the bin picking of transparent objects.
         </div>
     </div>
 </div>
 
 ---
 
-<div style="text-align: center;">
-    <h2>Video</h2>
+<div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+        <h2>Video</h2>
+        <div class="content has-text-justified">
+This video explains the research motivation, the mechanism design of the proposed gripper, and its applications.
+        </div>
+    </div>
 </div>
 
 <div align="center">
     <iframe width="640" height="360" 
-            src="https://www.youtube.com/embed/qFD562zo4Vk" 
+            src="https://www.youtube.com/embed/5f0qXYcE3nw" 
             frameborder="0" allowfullscreen>
     </iframe>
 </div>
 
 ---
-
+<!-- distant, tilted object picking 넣기 -->
 <div class="columns">
     <!-- Left Column: YouTube 비디오 (Visual Effects) -->
     <div class="column">
-        <h3 class="title">Demo - Logistics</h3>
-        <p>Using <em>nerfies</em> you can create fun visual effects. This Dolly zoom effect would be impossible without nerfies since it would require going through a wall.</p>
+        <h3 class="title">Picking Objects of Different Heights</h3>
+        <p>The proposed gripper picks up objects of different heights from the same picking height. The gripper eleiminates the need for depth sensing to pick up different heights of objects.</p>
         <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/ecViSuzARwk?autoplay=1&mute=1&loop=1&playlist=ecViSuzARwk&controls=0"
+                src="https://www.youtube.com/embed/tt_2sZBLOLE?autoplay=1&mute=1&loop=1&playlist=tt_2sZBLOLE"
                 frameborder="0" allowfullscreen>
         </iframe>
     </div>
 
     <!-- Right Column: YouTube 비디오 (Matting) -->
     <div class="column">
-        <h3 class="title">Comparison - Single-Object Grasping</h3>
-        <p>As a byproduct of our method, we can also solve the matting problem by ignoring samples that fall outside of a bounding box during rendering..</p>
+        <h3 class="title">Bin Picking of Transparent Objects</h3>
+        <p>Perceiving transparent objects is a challenge in vision sensing. The proposed gripper can easily perform bin picking tasks of transparent dishes even in the presence of depth or tilt angle errors.</p>
         <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/-rwAbY39Fcw?autoplay=1&mute=1&loop=1&playlist=-rwAbY39Fcw&controls=0"
+                src="https://www.youtube.com/embed/finvctjoIIE?autoplay=1&mute=1&loop=1&playlist=finvctjoIIE"
                 frameborder="0" allowfullscreen>
         </iframe>
     </div>
@@ -86,22 +70,41 @@ grasping.
 <div class="columns">
     <!-- Left Column: YouTube 비디오 (Visual Effects) -->
     <div class="column">
-        <h3 class="title">Demo - Domestics</h3>
-        <p>Using <em>nerfies</em> you can create fun visual effects. This Dolly zoom effect would be impossible without nerfies since it would require going through a wall.</p>
+        <h3 class="title">Depalletizing</h3>
+        <p>By arranging multiple grippers in parallel, the grippers can pick up multiple objects at different heights at once. This feature enables depalletizing when the number of grippers and the number of the objects arranged on each layer do not match.</p>
         <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/5ofxzuH4yJU?autoplay=1&mute=1&loop=1&playlist=5ofxzuH4yJU&controls=0"
+                src="https://www.youtube.com/embed/R-OGyXUa7Fg?autoplay=1&mute=1&loop=1&playlist=R-OGyXUa7Fg"
                 frameborder="0" allowfullscreen>
         </iframe>
     </div>
 
     <!-- Right Column: YouTube 비디오 (Matting) -->
     <div class="column">
-        <h3 class="title">Pick and Place Various Objects</h3>
-        <p>As a byproduct of our method, we can also solve the matting problem by ignoring samples that fall outside of a bounding box during rendering.</p>
+        <h3 class="title">Warehous Picking</h3>
+        <p>Extending the length of the gripper enables warehous picking in occlude environments. It has 140 mm stroke and can penetrate a narrow, deep space that cannot be reached by a manipulator.</p>
         <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/eDikWCNutgM?autoplay=1&mute=1&loop=1&playlist=eDikWCNutgM&controls=0"
+                src="https://www.youtube.com/embed/UYoG46ldE9o?autoplay=1&mute=1&loop=1&playlist=UYoG46ldE9o"
                 frameborder="0" allowfullscreen>
         </iframe>
+    </div>
+</div>
+
+<br>
+
+<div class="columns">
+    <!-- Left Column: YouTube 비디오 (Visual Effects) -->
+    <div class="column">
+        <h3 class="title">Dynamic Picking</h3>
+        <p>The proposed gripper with 79 mm stroke was applied to catch a falling balloon at a speed of 1.02 m/s at a distance of 50.1 mm, demonstrating the possibility of dynamic grasping.</p>
+        <iframe width="100%" height="315"
+                src="https://www.youtube.com/embed/CvUfYvb5tG0?autoplay=1&mute=1&loop=1&playlist=CvUfYvb5tG0"
+                frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Right Column: YouTube 비디오 (Matting) -->
+    <div class="column">
+
     </div>
 </div>
 
