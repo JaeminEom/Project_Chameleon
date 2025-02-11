@@ -160,14 +160,14 @@ Turing's paper laid the foundation for the theory of computation and had a profo
 </div>
 
 ```
-@article{eom2024mogrip,
-  title={MOGrip: Gripper for multiobject grasping in pick-and-place tasks using translational movements of fingers},
-  author={Eom, Jaemin and Yu, Sung Yol and Kim, Woongbae and Park, Chunghoon and Lee, Kristine Yoonseo and Cho, Kyu-Jin},
-  journal={Science Robotics},
-  volume={9},
-  number={97},
-  pages={eado3939},
-  year={2024},
-  publisher={American Association for the Advancement of Science}
+@article{yoo2023compliant,
+  title={Compliant suction gripper with seamless deployment and retraction for robust picking against depth and tilt errors},
+  author={Yoo, Yuna and Eom, Jaemin and Park, MinJo and Cho, Kyu-Jin},
+  journal={IEEE Robotics and Automation Letters},
+  volume={8},
+  number={3},
+  pages={1311--1318},
+  year={2023},
+  publisher={IEEE}
 }
 ```
