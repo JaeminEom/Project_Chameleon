@@ -115,6 +115,85 @@ This video explains the research motivation, the mechanism design of the propose
     </div>
 </div>
 
+---
+
+## Motivation
+
+<h3> Is there a way to achieve robust suction picking despite vision sensing errors? </h3>
+
+<div style="text-align: center;">
+    <img src="assets/Motivation.png" alt="Animated GIF" width="80%">
+</div>
+
+<b>Depth and tilt errors</b> in vision sensing often occur, especially when handling <b>transparent objects</b>. To address this issue, previous approaches have attempted to reduce sensing errors through <b>learning-based methods</b> or by incorporating <b>additional sensing</b> (e.g., proximity sensors). However, learning-based methods still have insufficient success rates, and using additional sensors increases cost and may hinder the speed of object picking.
+
+---
+
+## Our Solution
+
+<h3>Can we achieve robust picking against depth errors using only mechanical design, without additional sensors or learning?</h3>
+
+By relying solely on <b>mechanical design</b>, we could potentially reduce costs and enable compatibility with existing <b>suction-based actuation systems</b>. To achieve this, we need to consider the following approaches:
+
+1. <b>Designing a suction cup body</b> that can seal objects effectively, even in the presence of <b>depth and tilt errors.</b> <br>
+→ <font color="red"><b>Deployable & Compliant Body</b></font>
+
+2. <b>Proposing an actuation system (pneumatic circuit design)</b> that enables automatic picking without additional sensing or control once the suction cup seals the object. <br>
+→ <font color="red"><b>Pneumatic Circuit Design</b></font>
+
+---
+
+## Deployable, Compliant Gripper Body
+
+<h3> Soft Deploying Mechanism for Suction Cups </h3>
+
+<div style="text-align: center;">
+    <img src="assets/Deployable_Compliant_body.gif" alt="Animated GIF" width="80%">
+</div>
+
+The proposed gripper comprised two concentric cylindrical chambers, where the outer and inner chambers are termed as the spring-inserted gripper body and spring-inserted air tube, respectively. The gripper body retracts and deploys when negative pressure is applied or released, and the air tube provides the airway to the suction cup.
+
+<h3> The Gripper Body Conformable to Distant and Tilted Surfaces </h3>
+
+<div style="text-align: center;">
+    <img src="assets/Chameleon_Teaser.gif" alt="Animated GIF" width="80%">
+</div>
+
+The <b>gripper body was designed as a compressible spring enclosed in a cylindrical LDPE film</b> for the following reasons: First, the gripper can be deployed at a high speed due to the restoring force of the spring. Second, the gripper can conform to tilted objects during deployment. Finally, the radially incompressible characteristics of the spring allow the gripper to retract effectively in the longitudinal direction.
+
+The spring-inserted air tube which connects the suction cup and valve was built inside the gripper body with a compressible spring encased in a cylindrical LDPE film with the same structure as the gripper body. The radial incompressibility of the spring prevents airway clogging during the retraction.
+
+---
+
+## Pneumatic Circuit Design
+
+<h3>Connect Gripper Body and Suction Cup to the Same Vacuum Source.</h3>
+
+<video width="100%" height="auto" controls autoplay loop muted>
+    <source src="assets/Picking Strategy.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+Enabling <b>seamless deployment, pick, and retraction</b> without sensing and control <b>by coupling the vacuum picking and retraction of the gripper body.</b>
+- Pick up <b>distant & tilted object</b> without sensing and control.
+
+
+
+<!-- <div style="text-align: center;">
+    <img src="assets/Pipeline.png" alt="Finger-to-Palm Translation" width="100%">
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <div style="width: 45%;">
+        <img src="assets/Hand_Segmentation.png" alt="Finger-to-Palm Translation" width="100%">
+    </div>
+    <div style="width: 50%;">
+        <img src="assets/Finger-to-Palm Translation via Sliding.gif" alt="Column-shaped objects" width="100%">
+    </div>
+</div>
+<br>
+
+Humans repeat the process of **grasping → finger-to-palm translation → storing** to gather multiple objects in the palm before transporting them. The target objects were set as **column-shaped**, as they are one of the most frequently handled objects in daily life [1]. To efficiently transfer a column-shaped object to the palm, humans slide the grasped object along the inner surface of their fingers. Since this method does not require additional motions such as wrist flipping, it is considered the most effective approach for translating column-shaped objects. Thus, **sliding-based finger-to-palm translation** was established as the key manipulation skill for the MOG Hand. -->
 
 ---
 
