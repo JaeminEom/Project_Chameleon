@@ -36,7 +36,7 @@ This video explains the research motivation, the mechanism design of the propose
 
 <div align="center">
     <iframe width="720" height="405" 
-            src="https://www.youtube.com/embed/5f0qXYcE3nw" 
+            src="https://www.youtube.com/embed/5f0qXYcE3nw?autoplay=1&mute=1&loop=1&playlist=5f0qXYcE3nw&controls=1&fs=1" 
             frameborder="0" allowfullscreen>
     </iframe>
 </div>
